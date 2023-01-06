@@ -32,6 +32,7 @@ body{
     color: var(--regular_text);
     /* font-family: 'Courier Prime', monospace; */
     font-family: 'IBM Plex Mono', monospace;
+    cursor: url("../img/cursor.png"), auto;
     /* font-family: 'Goudy Bookletter 1911', serif; */
 }
 
@@ -49,7 +50,7 @@ body{
     font-size: 15px;
     background-color: var(--background_color);
     color: var(--regular_text);
-    cursor: url("../img/square_cursor.png"), auto;
+    cursor: url("../img/hand-cursor.png"), auto;
     padding: 8px;
 
 }
