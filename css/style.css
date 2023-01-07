@@ -66,6 +66,10 @@ body{
     border-color: var(--hover_btn_color);
 }
 
+#resetBtn {
+    width: 100px;
+    display: none;
+}
 
 ::selection {
     background: var(--highlight_background);

@@ -1,5 +1,6 @@
 let goBtn1 = $("#goBtn1");
 let goBtn2 = $("#goBtn2");
+let resetBtn = $("#resetBtn");
 let distanceText = $("#distanceText");
 
 const gptFunParam = atob('aHR0cHM6Ly8zendtcmV5czJ5cm53czVlNzJmeDczY3JtYTBod2d1cy5sYW1iZGEtdXJsLnVzLWVhc3QtMi5vbi5hd3M=');
@@ -15,7 +16,6 @@ var g_state = {
   currSize: $(window).width(),
   currentlyLoading: false,
   done_writing: false,
-  got_img: false,
   bioHistory: [],
   planet_option_1: null,
   planet_option_2: null,
@@ -543,14 +543,18 @@ function processFirstPlanets(res) {
   g_state.planet_option_2 = res["planet_2"]["full_data"];
 }
 
+function finishCaptains() {
+  resetBtn.show();
+}
+
 function processCaptainsLog(res) {
   console.log(res);
   g_state.captains_log = res;
   getImg();
   if (g_state.done_writing) {
     $("#captainsLog").show();
-    $("#dalleImg").css("display", "block");    
-    charByChar(g_state.captains_log, 0, "#captainsLog", PACE_INTERVAL, null);
+    $("#dalleImg").css("display", "block");
+    charByChar(g_state.captains_log, 0, "#captainsLog", PACE_INTERVAL, finishCaptains);
   } else {
     console.log("not done describing!")
   }
@@ -691,7 +695,6 @@ function charByChar(text, index, target, pace, cb){
 
 function paintImg(imgRes) {
   console.log(imgRes["dalle_caption"]);
-  g_state.got_img = true;
   $("#dalleImg").attr('src', "data:image/png;base64," + imgRes["dalle_b64"]);
 }
 
@@ -702,7 +705,7 @@ function finishDescriptionPainting() {
   } else {
     $("#captainsLog").show();
     $("#dalleImg").css("display", "block");
-    charByChar(g_state.captains_log, 0, "#captainsLog", PACE_INTERVAL, null);
+    charByChar(g_state.captains_log, 0, "#captainsLog", PACE_INTERVAL, finishCaptains);
   }
 }
 
@@ -721,6 +724,10 @@ function processChosenPlanet() {
   animateValues(STAR_LOADING_TIME_MS, finishLoadingPlanetDetailsAnim);
   makeCaptainReq(g_state.chosen_planet_info);
 }
+
+resetBtn.click(function() {
+  startApp();
+});
 
 goBtn1.click(function() {
   if (!g_state.currentlyLoading) {
@@ -748,10 +755,13 @@ function resetState() {
     g_state.captains_log = null;
     g_state.chosen_planet_info = null;
     g_state.done_writing = false;
-    g_state.got_img = false;
+    resetBtn.hide();
     $("#captainsLog").hide();    
     $("#planetDesc").hide();
     $("#distanceText").html("00000000000000");
+    $("#dalleImg").hide();
+    $("#captainsLog").html("");
+    $("#planetDesc").html("");
     goBtn1.show();
     goBtn2.show();
 }
