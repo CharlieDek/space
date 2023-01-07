@@ -633,7 +633,7 @@ function animateValues(duration, cb) {
         if (!startTimestamp) startTimestamp = timestamp;
         let elapsed = timestamp - startTimestamp;
         const progress = Math.min((elapsed) / duration, 1);
-        animateDistanceVal(distanceText, progress, 0, 819170000000000);
+        animateDistanceVal(distanceText, progress, 0, Math.random() * 10000000000000000);
         if (elapsed > halfDuration) {
             if (currSpeed > 4) {
                 currSpeed -= addFactor;
