@@ -64,7 +64,6 @@ body{
     font-weight: bold;
     color: var(--regular_text);
     border-color: var(--hover_btn_color);
-
 }
 
 
@@ -103,8 +102,8 @@ body{
 }
 
 #dalleImg {
-    height: 300px;
-    border: 1px solid var(--img_border_color);
+    height: 312px;
+    border: 2px solid var(--img_border_color);
     margin-top: 10px;
     display: none;
 }
@@ -148,6 +147,18 @@ body{
     border: 2px solid var(--regular_text);
     padding: 6px;
     font-family: 'Goudy Bookletter 1911', serif;
+}
+
+#planetDesc:hover {
+    background-color: var(--hover_btn_color);
+    color: var(--regular_text);
+    border-color: var(--hover_btn_color);    
+}
+
+#captainsLog:hover {
+    background-color: var(--hover_btn_color);
+    color: var(--regular_text);
+    border-color: var(--hover_btn_color);    
 }
 
 #samples img {
