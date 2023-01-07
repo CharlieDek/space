@@ -716,6 +716,7 @@ function paintPlanetDescription(planetDesc) {
 }
 
 function finishLoadingPlanetDetailsAnim() {
+  $("#dalleImg").css("display", "block");  
   paintPlanetDescription(g_state.chosen_planet_info);
 }
 
