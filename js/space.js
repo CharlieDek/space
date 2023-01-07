@@ -763,6 +763,7 @@ function resetState() {
     $("#dalleImg").hide();
     $("#captainsLog").html("");
     $("#planetDesc").html("");
+    $("#dalleImg").attr('src', "img/stars2.jpg");
     goBtn1.show();
     goBtn2.show();
 }
