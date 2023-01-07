@@ -629,11 +629,12 @@ function animateValues(duration, cb) {
     let currSpeed = 0.15;
     let addFactor = 0.00;
     let addAmt = 0.06;
+    const currTarget = Math.random() * 10000000000000000;
     const step = (timestamp) => {
         if (!startTimestamp) startTimestamp = timestamp;
         let elapsed = timestamp - startTimestamp;
         const progress = Math.min((elapsed) / duration, 1);
-        animateDistanceVal(distanceText, progress, 0, Math.random() * 10000000000000000);
+        animateDistanceVal(distanceText, progress, 0, currTarget);
         if (elapsed > halfDuration) {
             if (currSpeed > 4) {
                 currSpeed -= addFactor;
