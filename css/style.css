@@ -10,6 +10,7 @@
     --bg_gradient_color_3: #d5c7793a;    
     --highlight_background: #0032d5;
     --highlight_text: #c9c8c5;
+    --hover_btn_color: #fc3d21;
 };
 
 html{
@@ -44,16 +45,28 @@ body{
     letter-spacing: 20px;
 }
 
-#goBtn {
+.discoverBtn {
     font-family: 'IBM Plex Mono', monospace;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 15px;
+    border-radius: 2px;
     background-color: var(--background_color);
+    border: 2px solid var(--regular_text);
     color: var(--regular_text);
     cursor: url("../img/hand-cursor.png"), auto;
     padding: 8px;
+    text-align: center;
+    width: 316px;
+}
+
+.discoverBtn:hover {
+    background-color: var(--hover_btn_color);
+    font-weight: bold;
+    color: var(--regular_text);
+    border-color: var(--hover_btn_color);
 
 }
+
 
 ::selection {
     background: var(--highlight_background);
@@ -89,35 +102,17 @@ body{
 
 }
 
-#locationImg {
-    height: 400px;
+#dalleImg {
+    height: 300px;
     border: 1px solid var(--img_border_color);
-    cursor: url("../img/square_cursor.png"), auto;
+    margin-top: 10px;
+    display: none;
 }
 
 #locationImg:hover {
     /* border: 2px solid white; */
 }
 
-/* ---- Start reg custom site content elems ----*/
-
-/* Start mid screen section */
-@media only screen and (max-width: 1050px) {
-}
-/* end mid screen section */
-
-
-/* Start small screen section */
-@media only screen and (max-width: 795px) {
-}
-/* end small screen section */
-
-
-/* Start tiny screen section */
-@media only screen and (max-width: 399px) {
-
-}
-/* end tiny screen section */
 
 .preview{
     margin-top: 10px;
@@ -131,9 +126,28 @@ body{
     margin-right: auto;    
 }
 
-
 #samples{
 	text-align: center;
+}
+
+#planetDesc {
+    display: none;
+    font-size: 11px;
+    line-height: 1.2;
+    max-width: 300px;
+    border: 2px solid var(--regular_text);
+    padding: 6px;
+    font-weight: 300;
+}
+
+#captainsLog {
+    display: none;
+    font-size: 13px;
+    line-height: 1.2;
+    max-width: 300px;
+    border: 2px solid var(--regular_text);
+    padding: 6px;
+    font-family: 'Goudy Bookletter 1911', serif;
 }
 
 #samples img {
@@ -152,3 +166,34 @@ body{
 		/* display: inline-block; */
 	/* } */
 /* } */
+
+/* ---- Start reg custom site content elems ----*/
+
+/* Start mid screen section */
+@media only screen and (max-width: 1050px) {
+}
+/* end mid screen section */
+
+
+/* Start small screen section */
+@media only screen and (max-width: 795px) {
+
+    h1 {
+        font-size: 16px;
+    }
+    .tickingNumbers {
+        font-size: 14px;
+    }
+
+    #distanceText {
+        letter-spacing: 8px;
+    }
+}
+/* end small screen section */
+
+
+/* Start tiny screen section */
+@media only screen and (max-width: 399px) {
+
+}
+/* end tiny screen section */
