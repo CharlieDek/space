@@ -2,7 +2,7 @@
     /* main colors */
     --regular_text:#e4dcc5;
     --background_color: #0e0b0e;
-    --shadow_color: #fd1aa2;
+    --shadow_color: #e4dcc5;
     --img_border_color: #c9c8c5;
     /* --bg_gradient_color_1: #000000fe; */
     /* --bg_gradient_color_2: #111111d5; */
@@ -89,8 +89,8 @@ body{
 
 .discoverBtn:hover {
     /* background-color: var(--hover_btn_color); */
+    color: var(--hover_btn_color);
     font-weight: bold;
-    color: var(--regular_text);
     /* border-color: var(--hover_btn_color); */
 
     /* box-shadow: */
@@ -104,7 +104,7 @@ body{
                                 /* url(../js/img/noise.svg); */
     box-shadow:
     -10px 0 150px var(--highlight_hover),
-    3px 2px var(--regular_text)
+    3px 2px var(--shadow_color)
     /* 10px 0 150px var(--highlight_hover_accent); */
 
 }
@@ -143,7 +143,7 @@ body{
 #dalleImg:hover {
     box-shadow:
     -10px 0 150px var(--highlight_hover),
-    3px 2px var(--regular_text)    
+    3px 2px var(--shadow_color)    
 }
 
 #locationImg:hover {
@@ -193,7 +193,7 @@ body{
     /* border-color: var(--hover_btn_color); */
     box-shadow:
     -10px 0 150px var(--highlight_hover),
-    3px 2px var(--regular_text)    
+    3px 2px var(--shadow_color)    
 }
 
 #captainsLog:hover {
@@ -202,7 +202,7 @@ body{
     /* border-color: var(--hover_btn_color); */
     box-shadow:
     -10px 0 150px var(--highlight_hover),
-    3px 2px var(--regular_text)    
+    3px 2px var(--shadow_color)    
 }
 
 #samples img {
