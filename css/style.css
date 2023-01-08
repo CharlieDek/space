@@ -37,6 +37,11 @@ h1 {
     /* background-image: url(../img/flameon.png); */
 }
 
+
+h1:hover {
+    color: var(--hover_btn_color);
+}
+
 body{
     /* background: url(../img/noise.svg); */
     background-color: var(--background_color);
