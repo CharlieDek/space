@@ -1,6 +1,6 @@
 :root {
     /* main colors */
-    --regular_text:#c9c8c5;
+    --regular_text:#e4dcc5;
     --background_color: #090708;
     --shadow_color: #241f22;
     --img_border_color: #c9c8c5;
@@ -21,6 +21,7 @@ html{
 h1 {
     display: inline-block;
     background-size: 30%;
+    color: var(--regular_text);
     /* font-size: 100px; */
     /* border: 1px solid white; */
     /* padding: 10px; */
@@ -50,7 +51,7 @@ body{
     font-weight: bold;
     font-size: 15px;
     border-radius: 2px;
-    background-color: var(--background_color);
+    background-color: transparent;
     border: 2px solid var(--regular_text);
     color: var(--regular_text);
     cursor: url("../img/hand-cursor.png"), auto;
