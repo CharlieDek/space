@@ -14,12 +14,6 @@
 
 
     --highlight_hover: #ffffff8e;
-    --highlight_hover_accent: #f652ac5b;
-    --bg_gradient_color_1: #3331AC;
-    --bg_gradient_color_2: #fe8e8e0f;
-    --highlight_hover_color_1: #fe8e8e;
-    --highlight_hover_color_2: #8eeffe26;
-    --highlight_hover_color_2_alt: #ff000054;    
 };
 
 html{
@@ -31,10 +25,6 @@ h1 {
     display: inline-block;
     background-size: 30%;
     color: var(--regular_text);
-    /* font-size: 100px; */
-    /* border: 1px solid white; */
-    /* padding: 10px; */
-    /* background-image: url(../img/flameon.png); */
 }
 
 
