@@ -30,13 +30,31 @@ h1 {
 
 body{
     /* background: url(../img/noise.svg); */
-    background-color: var(--background_color);
+    /* background-color: var(--background_color); */
     color: var(--regular_text);
     /* font-family: 'Courier Prime', monospace; */
     font-family: 'IBM Plex Mono', monospace;
     cursor: url("../img/cursor.png"), auto;
+    background-image: url(../img/grain.png);    
     /* font-family: 'Goudy Bookletter 1911', serif; */
 }
+
+
+#particles-js{
+    left: -7px;
+    top: -6px;
+    /* visibility: hidden; */
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 7px);
+    height: calc(100% + 8px);
+    /* background: linear-gradient(90deg, var(--bg_gradient_color_1) 50%, var(--bg_gradient_color_2) 100%), url(../img/noise.svg); */
+    /* background: linear-gradient(45deg, var(--bg_gradient_color_1) 60%, var(--bg_gradient_color_2)), url(../img/stars2.jpg); */
+    /* background: linear-gradient(45deg, var(--bg_gradient_color_1) 60%, var(--bg_gradient_color_2)), url(../img/noise.svg); */
+    /* background: linear-gradient(90deg, var(--bg_gradient_color_1) 20%, var(--bg_gradient_color_2)); */
+
+}
+
 
 .tickingNumbers {
     font-size: 20px;
@@ -82,29 +100,14 @@ body{
     color: var(--highlight_text);
 }
 
-.frontOfSpace {
-    color: var(--img_border_color);
-    display: inline-block;
-    background-color: black;
-    background: linear-gradient(90deg, var(--bg_gradient_color_1) 60%, var(--bg_gradient_color_2)), url(../img/noise.svg);
-}
+/* .frontOfSpace { */
+    /* color: var(--img_border_color); */
+    /* display: inline-block; */
+    /* background-color: black; */
+    /* background: linear-gradient(90deg, var(--bg_gradient_color_1) 60%, var(--bg_gradient_color_2)), url(../img/noise.svg); */
+/* } */
 
 /* ---- particles.js container ---- */
-
-#particles-js{
-    left: -7px;
-    top: -6px;
-    /* visibility: hidden; */
-    position: absolute;
-    z-index: -1;
-    width: calc(100% + 7px);
-    height: calc(100% + 8px);
-    /* background: linear-gradient(90deg, var(--bg_gradient_color_1) 0%, var(--bg_gradient_color_2) 90%, var(--bg_gradient_color_3) 100%), url(../img/noise.svg); */
-    /* background: linear-gradient(45deg, var(--bg_gradient_color_1) 60%, var(--bg_gradient_color_2)), url(../img/stars2.jpg); */
-    /* background: linear-gradient(45deg, var(--bg_gradient_color_1) 60%, var(--bg_gradient_color_2)), url(../img/noise.svg); */
-    /* background: linear-gradient(90deg, var(--bg_gradient_color_1) 20%, var(--bg_gradient_color_2)); */
-
-}
 
 #dalleImg {
     height: 312px;

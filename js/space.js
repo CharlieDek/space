@@ -114,7 +114,7 @@ const c_PARTICLES_WHITE_GRAB_SLOW_IMG = {
       "line_linked": {
         "enable": false,
         "distance": 250,
-        "color": "#ffffff",
+        "color": "#e4dcc5",
         "opacity": 0.4,
         "width": 0.5
       },
@@ -336,7 +336,7 @@ const c_PARTICLES_WHITE_GRAB_LARGE = {
       "line_linked": {
         "enable": false,
         "distance": 252.750653390415,
-        "color": "#ffffff",
+        "color": "#e4dcc5",
         "opacity": 0.8,
         "width": 0.8
       },
@@ -447,7 +447,7 @@ const c_PARTICLES_WHITE_GRAB_LARGE_SUPER_FAST = {
       "line_linked": {
         "enable": false,
         "distance": 152.750653390415,
-        "color": "#CBDAE3",
+        "color": "#e4dcc5",
         "opacity": 0.8,
         "width": 0.8
       },
@@ -608,7 +608,7 @@ function zoomIn(event) {
     var pre = document.getElementById("preview1");
     pre.style.visibility = "visible";
     if ($('#allSpace').is(':hover')) {
-          pre.style.backgroundImage = "url('img/stars2.jpg')";
+          pre.style.backgroundImage = "url('img/stars3.png')";
       }
     var posX = event.offsetX;
     var posY = event.offsetY;
@@ -757,13 +757,13 @@ function resetState() {
     g_state.chosen_planet_info = null;
     g_state.done_writing = false;
     resetBtn.hide();
-    $("#captainsLog").hide();    
+    $("#captainsLog").hide();
     $("#planetDesc").hide();
     $("#distanceText").html("00000000000000");
     $("#dalleImg").hide();
     $("#captainsLog").html("");
     $("#planetDesc").html("");
-    $("#dalleImg").attr('src', "img/stars2.jpg");
+    $("#dalleImg").attr('src', "img/stars3.png");
     goBtn1.show();
     goBtn2.show();
 }
