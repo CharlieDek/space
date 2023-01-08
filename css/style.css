@@ -2,15 +2,24 @@
     /* main colors */
     --regular_text:#e4dcc5;
     --background_color: #0e0b0e;
-    --shadow_color: #241f22;
+    --shadow_color: #fd1aa2;
     --img_border_color: #c9c8c5;
-    --bg_gradient_color_1: #000000fe;
-    --bg_gradient_color_2: #111111d5;
+    /* --bg_gradient_color_1: #000000fe; */
+    /* --bg_gradient_color_2: #111111d5; */
     /* --bg_gradient_color_2: #011829cb; */
     --bg_gradient_color_3: #d5c7793a;    
     --highlight_background: #0032d5;
     --highlight_text: #c9c8c5;
     --hover_btn_color: #fc3d21;
+
+
+    --highlight_hover: #ffffff8e;
+    --highlight_hover_accent: #f652ac5b;
+    --bg_gradient_color_1: #3331AC;
+    --bg_gradient_color_2: #fe8e8e0f;
+    --highlight_hover_color_1: #fe8e8e;
+    --highlight_hover_color_2: #8eeffe26;
+    --highlight_hover_color_2_alt: #ff000054;    
 };
 
 html{
@@ -79,10 +88,25 @@ body{
 }
 
 .discoverBtn:hover {
-    background-color: var(--hover_btn_color);
+    /* background-color: var(--hover_btn_color); */
     font-weight: bold;
     color: var(--regular_text);
-    border-color: var(--hover_btn_color);
+    /* border-color: var(--hover_btn_color); */
+
+    /* box-shadow: */
+    /* -10px 0 150px var(--highlight_hover), */
+    /* 10px 0 150px var(--highlight_hover_accent); */
+    /* border: 3px inset var(--regular_text); */
+    /* background-color: blue; */
+    /* background: linear-gradient(to left,  */
+                                /* var(--button_hover_color), */
+                                /* var(--button_hover_color_2)), */
+                                /* url(../js/img/noise.svg); */
+    box-shadow:
+    -10px 0 150px var(--highlight_hover),
+    3px 2px var(--regular_text)
+    /* 10px 0 150px var(--highlight_hover_accent); */
+
 }
 
 #resetBtn {
@@ -114,6 +138,12 @@ body{
     border: 2px solid var(--img_border_color);
     margin-top: 10px;
     display: none;
+}
+
+#dalleImg:hover {
+    box-shadow:
+    -10px 0 150px var(--highlight_hover),
+    3px 2px var(--regular_text)    
 }
 
 #locationImg:hover {
@@ -158,15 +188,21 @@ body{
 }
 
 #planetDesc:hover {
-    background-color: var(--hover_btn_color);
-    color: var(--regular_text);
-    border-color: var(--hover_btn_color);    
+    /* background-color: var(--hover_btn_color); */
+    /* color: var(--regular_text); */
+    /* border-color: var(--hover_btn_color); */
+    box-shadow:
+    -10px 0 150px var(--highlight_hover),
+    3px 2px var(--regular_text)    
 }
 
 #captainsLog:hover {
-    background-color: var(--hover_btn_color);
-    color: var(--regular_text);
-    border-color: var(--hover_btn_color);    
+    /* background-color: var(--hover_btn_color); */
+    /* color: var(--regular_text); */
+    /* border-color: var(--hover_btn_color); */
+    box-shadow:
+    -10px 0 150px var(--highlight_hover),
+    3px 2px var(--regular_text)    
 }
 
 #samples img {

@@ -511,6 +511,8 @@ const c_PARTICLES_WHITE_GRAB_LARGE_SUPER_FAST = {
 function handleLambdaError() {
   // startApp();
   resetState();
+  goBtn1.hide();
+  goBtn2.hide();
 }
 
 function hitGptFun(requestBody, cb) {
