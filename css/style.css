@@ -88,25 +88,11 @@ body{
 }
 
 .discoverBtn:hover {
-    /* background-color: var(--hover_btn_color); */
     color: var(--hover_btn_color);
     font-weight: bold;
-    /* border-color: var(--hover_btn_color); */
-
-    /* box-shadow: */
-    /* -10px 0 150px var(--highlight_hover), */
-    /* 10px 0 150px var(--highlight_hover_accent); */
-    /* border: 3px inset var(--regular_text); */
-    /* background-color: blue; */
-    /* background: linear-gradient(to left,  */
-                                /* var(--button_hover_color), */
-                                /* var(--button_hover_color_2)), */
-                                /* url(../js/img/noise.svg); */
     box-shadow:
     -10px 0 150px var(--highlight_hover),
     3px 2px var(--shadow_color)
-    /* 10px 0 150px var(--highlight_hover_accent); */
-
 }
 
 #resetBtn {
@@ -142,7 +128,7 @@ body{
 
 #dalleImg:hover {
     box-shadow:
-    -10px 0 150px var(--highlight_hover),
+    -10px 0 50px var(--highlight_hover),
     3px 2px var(--shadow_color)    
 }
 
@@ -188,20 +174,16 @@ body{
 }
 
 #planetDesc:hover {
-    /* background-color: var(--hover_btn_color); */
-    /* color: var(--regular_text); */
-    /* border-color: var(--hover_btn_color); */
+    color: var(--hover_btn_color);    
     box-shadow:
-    -10px 0 150px var(--highlight_hover),
+    -10px 0 50px var(--highlight_hover),
     3px 2px var(--shadow_color)    
 }
 
 #captainsLog:hover {
-    /* background-color: var(--hover_btn_color); */
-    /* color: var(--regular_text); */
-    /* border-color: var(--hover_btn_color); */
+    color: var(--hover_btn_color);
     box-shadow:
-    -10px 0 150px var(--highlight_hover),
+    -10px 0 50px var(--highlight_hover),
     3px 2px var(--shadow_color)    
 }
 
