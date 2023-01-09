@@ -201,15 +201,15 @@ body{
 /* Start mid screen section */
 @media only screen and (min-width: 1150px) {
     #planetDesc {
-        max-width: 625px;
+        max-width: 525px;
     }
     
     #captainsLog {
-        max-width: 625px;
+        max-width: 525px;
     }
 
     #dalleImg {
-        height: 637px;
+        height: 537px;
     }
 }
 /* end mid screen section */
