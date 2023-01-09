@@ -123,7 +123,6 @@ body{
 
 #dalleImg:hover {
     box-shadow:
-    -10px 0 50px var(--highlight_hover),
     3px 2px var(--shadow_color)    
 }
 
@@ -171,14 +170,12 @@ body{
 #planetDesc:hover {
     color: var(--hover_btn_color);    
     box-shadow:
-    -10px 0 50px var(--highlight_hover),
     3px 2px var(--shadow_color)    
 }
 
 #captainsLog:hover {
     color: var(--hover_btn_color);
     box-shadow:
-    -10px 0 50px var(--highlight_hover),
     3px 2px var(--shadow_color)    
 }
 

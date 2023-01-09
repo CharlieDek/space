@@ -605,18 +605,6 @@ else { // large window setting
   particlesJS('particles-js', c_PARTICLES_WHITE_GRAB_LARGE_SUPER_FAST);
 }  // end large window
 
-// Zoom on preview1 from initial
-function zoomIn(event) {
-    var pre = document.getElementById("preview1");
-    pre.style.visibility = "visible";
-    if ($('#allSpace').is(':hover')) {
-          pre.style.backgroundImage = "url('img/stars3.png')";
-      }
-    var posX = event.offsetX;
-    var posY = event.offsetY;
-    pre.style.backgroundPosition=(-posX*9.9)+"px "+(-posY*9.9)+"px";
-}
-
 function accelerateParticles() {
     for (let i = 0; i != 100; ++i) {
         window.pJSDom[0].pJS.particles.move.speed = i;
@@ -765,7 +753,7 @@ function resetState() {
     $("#dalleImg").hide();
     $("#captainsLog").html("");
     $("#planetDesc").html("");
-    $("#dalleImg").attr('src', "img/stars3.png");
+    $("#dalleImg").attr('src', "img/transparent.svg");
     goBtn1.show();
     goBtn2.show();
 }
