@@ -11,9 +11,8 @@
     --highlight_background: #0032d5;
     --highlight_text: #c9c8c5;
     --hover_btn_color: #fc3d21;
-
-
-    --highlight_hover: #ffffff8e;
+    --highlight_hover: #fc3e218a;
+    --button_hover_shadow_color: #fc3e214b;
 };
 
 html{
@@ -83,11 +82,12 @@ body{
 }
 
 .discoverBtn:hover {
-    color: var(--hover_btn_color);
+    background-color: var(--hover_btn_color);
     font-weight: bold;
+    border-color: var(--highlight_hover);
     box-shadow:
-    -10px 0 150px var(--highlight_hover),
-    3px 2px var(--shadow_color)
+    -10px 0 100px var(--highlight_hover),
+    3px 3px var(--button_hover_shadow_color)
 }
 
 #resetBtn {
