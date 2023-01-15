@@ -222,6 +222,7 @@ body{
         font-size: 16px;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
     .tickingNumbers {
         font-size: 14px;
@@ -242,11 +243,13 @@ body{
     }
 
     #planetDesc {
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #captainsLog {
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #dalleImg {
