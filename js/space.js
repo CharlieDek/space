@@ -717,6 +717,8 @@ function processChosenPlanet() {
 }
 
 resetBtn.click(function() {
+  resetBtn.hide();
+  resetBtn.text("Next");  
   startApp();
 });
 
@@ -737,6 +739,7 @@ goBtn1.click(function() {
 });
 
 function resetState() {
+    $("#topNumberDiv").show();
     g_state.currentlyLoading = true;
     runEllipse();
     // window.pJSDom[0].pJS.particles.move.speed = Math.random() * 4;
@@ -764,4 +767,5 @@ function startApp() {
   makeFirstPlanetsReq();
 }
 
-startApp();
+
+init();

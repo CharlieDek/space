@@ -17,21 +17,25 @@
 <body>
   <!-- particles.js container -->
   <div id="particles-js"></div>
-  <h1>planet_archive</h1>
-  <br>
-  <div id="topNumberDiv">
-    <span class="tickingNumbers" id="distanceText">00000000000000</span><span class="tickingNumbers">miles from home</span>
-  </div>  
-  <!-- <h3>[Pick an area to explore]</h3> -->
-  <p></p>
-  <!-- TODO do this one char by char -->
-  <button id="goBtn1" class="discoverBtn loading_tags">Loading</button>
-  <button id="goBtn2" class="discoverBtn loading_tags">Loading</button>
+  <div id="allContent">
+    <h1>planet_archive</h1>
+    <br>
+    <div id="topNumberDiv">
+      <span class="tickingNumbers" id="distanceText">00000000000000</span><span class="tickingNumbers">miles from home</span>
+    </div>  
+    <!-- <h3>[Pick an area to explore]</h3> -->
+    <p></p>
+    <table id="discoverBtnTable">
+      <tr>
+      <td><button id="goBtn1" class="discoverBtn loading_tags">Loading</button></td>
+      <td><button id="goBtn2" class="discoverBtn loading_tags">Loading</button></td>
+    </tr>      
+  </table>    
   <img id="dalleImg" src="img/transparent.svg" alt="stars">
   <p id="planetDesc"></p>
   <p id="captainsLog"></p>
-  <button id="resetBtn" class="discoverBtn">Next</button>
-
+  <td><button id="resetBtn">Begin</button></td>
+  </div>
 <!-- scripts -->
 <script src="js/particles.js/particles.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>

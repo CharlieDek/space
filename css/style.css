@@ -20,26 +20,34 @@ html{
     display: inline-block;
 }
 
-h1 {
-    display: inline-block;
-    background-size: 30%;
-    color: var(--regular_text);
+#goBtn1, #goBtn2, #topNumberDiv {
+    display: none;
 }
 
+h1 {
+    display: block;
+    background-size: 30%;
+    color: var(--regular_text);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#topNumberDiv {
+    text-align: center;
+}
 
 h1:hover {
     color: var(--hover_btn_color);
 }
 
 body{
-    /* background: url(../img/noise.svg); */
     background-color: var(--background_color);
     color: var(--regular_text);
-    /* font-family: 'Courier Prime', monospace; */
     font-family: 'IBM Plex Mono', monospace;
     cursor: url("../img/cursor.png"), auto;
     background-image: url(../img/grain.png);    
-    /* font-family: 'Goudy Bookletter 1911', serif; */
 }
 
 
@@ -65,6 +73,12 @@ body{
 
 #distanceText {
     letter-spacing: 20px;
+    text-align: center;    
+}
+
+#discoverBtnTable {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .discoverBtn {
@@ -91,9 +105,30 @@ body{
 }
 
 #resetBtn {
-    width: 100px;
-    display: none;
+
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    color: var(--regular_text);
+    cursor: url("../img/hand-cursor.png"), auto;
+    padding: 8px;
+    text-align: center;
+    
+
+    top: 50%;    
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+
 }
+
+#resetBtn:hover {
+    color: var(--hover_btn_color);
+}
+
 
 ::selection {
     background: var(--highlight_background);
@@ -105,29 +140,20 @@ body{
     color: var(--highlight_text);
 }
 
-/* .frontOfSpace { */
-    /* color: var(--img_border_color); */
-    /* display: inline-block; */
-    /* background-color: black; */
-    /* background: linear-gradient(90deg, var(--bg_gradient_color_1) 60%, var(--bg_gradient_color_2)), url(../img/noise.svg); */
-/* } */
-
 /* ---- particles.js container ---- */
 
 #dalleImg {
     height: 312px;
     border: 2px solid var(--img_border_color);
     margin-top: 10px;
-    display: none;
+    display: none;    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #dalleImg:hover {
     box-shadow:
     3px 2px var(--shadow_color)    
-}
-
-#locationImg:hover {
-    /* border: 2px solid white; */
 }
 
 
@@ -155,10 +181,12 @@ body{
     border: 2px solid var(--regular_text);
     padding: 6px;
     font-weight: 300;
+    margin: auto;
 }
 
 #captainsLog {
     display: none;
+    margin: auto;
     font-size: 13px;
     line-height: 1.2;
     max-width: 300px;
@@ -180,7 +208,6 @@ body{
 }
 
 #samples img {
-	display: block;
     border: 1px solid var(--img_border_color);
     display: block;
     margin-left: auto;
@@ -189,12 +216,6 @@ body{
 #samples img:hover {
     cursor: url("../img/square_cursor.png"), auto;
 }
-
-/* @media screen and (max-width: 767px){ */
-	/* #samples img { */
-		/* display: inline-block; */
-	/* } */
-/* } */
 
 /* ---- Start reg custom site content elems ----*/
 
@@ -220,56 +241,19 @@ body{
 
     h1 {
         font-size: 16px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
     }
+
     .tickingNumbers {
         font-size: 14px;
-    }
-
-    #topNumberDiv {
-        text-align: center;
-    }
-
-    .discoverBtn {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     #distanceText {
         letter-spacing: 8px;
     }
 
-    #planetDesc {
-        margin-left: auto;
-        margin-right: auto;
+    .discoverBtn {
+        width: 180px;
     }
-    
-    #captainsLog {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #dalleImg {
-        /* display: block; */
-        margin-left: auto;
-        margin-right: auto;
-        /* width: 50%; */
-    }
-
-    #resetBtn {
-        margin-left: auto;
-        margin-right: auto;
-    }    
 
 }
 /* end small screen section */
-
-
-/* Start tiny screen section */
-@media only screen and (max-width: 399px) {
-
-}
-/* end tiny screen section */
